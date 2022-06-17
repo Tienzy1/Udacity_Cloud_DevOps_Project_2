@@ -56,11 +56,8 @@ Resources:
           sudo apt-get install apache2 -y
           sudo systemctl start apache2.service 
           cd /var/www/html
-          echo "Udagram WebApp Up and Running!" > index.html         
-      # ToDo: AMI ID of Ubuntu Linux machine. Too get one, try creating a VM from the web console. 
-      ImageId: ami-052efd3df9dad4825
-      # ToDo: Change the key-pair name, as applicable to you. 
-      KeyName:
+          echo "Udagram WebApp Up and Running!" > index.html          
+      ImageId: ami-052efd3df9dad4825 
       SecurityGroups:
       - Ref: WebServerSecGroup
       InstanceType: t3.medium
